@@ -69,8 +69,8 @@ def validar(parte):
 usuarios = leer_base("my_db")
 
 #EJECUCIÓN
-registrado = registrar(input("Ingrese nombre de usuario para registrar: "), "Ingrese contraseña: ")
-usuario_log = iniciar_sesion("Ingrese nombre de usuario para iniciar sesión: ", "Ingrese contraseña: ")
+registrado = registrar(input("Ingrese nombre de usuario para registrar: "), input("Ingrese contraseña: "))
+usuario_log = iniciar_sesion(input("Ingrese nombre de usuario para iniciar sesión: "), input("Ingrese contraseña: "))
 
 mostrar_usuarios()
 
